@@ -1,0 +1,33 @@
+#
+# Orion Audio Universal Topology for Intel Core DSP
+#
+
+SectionHWConfig."IntelLakeConfig" {
+	id "1"
+	format "I2S"
+	bclk "master"
+	fsync "master"
+}
+
+SectionDAI."Orion Jack" {
+	id "1"
+	direction "playback"
+	format "s16le"
+	channels "2"
+	rate "48000"
+}
+
+SectionPCM."Primary Playback" {
+	id "1"
+	direction "playback"
+	capabilities "playback"
+	configs "IntelLakeConfig"
+}
+
+SectionGraph."Orion Routing Graph" {
+	index "1"
+	lines [
+		"Orion Jack, , Primary Playback"
+	]
+}
+
