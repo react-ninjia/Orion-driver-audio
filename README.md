@@ -20,7 +20,7 @@ I am a 9-year-old developer from Italy. This is my first driver project, and it 
 MIT License
 
 ## Source Code
-If you want to study the code; you can look "ORION-1.0-Audio" folder directly here on Github download the .ZIP! 
+If you want to study the code; you can look "ORION-1.0-Audio" folder directly here on Github download the unzipped file.
 
 However, I highly recommend downloading the .ZIP file and extracting it for the installation.
 
